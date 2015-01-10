@@ -1,0 +1,51 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: layout-home.ai
+Color Mode: RGB color
+Color Profile: none
+Ruler Units: pixels
+Artboard Dimensions: 1197 px x 1353 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Card Characters (TrueType)
+Raleway (OTF)
+Raleway Medium (OTF)
+Raleway SemiBold (OTF)
+Raleway Bold (OTF)
+Raleway ExtraBold (OTF)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+/Usu‡rios/kenialopes/Documentos/Clientes/Diogenes sites/Guia de Apostas/shutterstock_120360562.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 2929K, 1000 by 1000 pixels
+Dimensions: 1244,725 by 1244,725 points 
+Resolution: 57,844 by 57,844 pixels per inch
