@@ -11,6 +11,12 @@
 	</main><!-- #content -->
 
 	<footer>
+    <div class="wrapper">
+      <div class="col-sm-6 copyright">Copyright</div>
+      <div class="col-sm-6 menu-footer">
+        <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?> 
+      </div>
+    </div>
 	</footer><!-- #colophon -->
 	
 </div><!-- #page -->

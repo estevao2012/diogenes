@@ -26,34 +26,38 @@ get_header(); ?>
 				<li></li>
 			</ul>
 		</div>
+
 	</div>
 
 	<div class="wrapper content">
-
+		
 		<div class="destaque">
-			<div class="destaque-item">
-				<h3>Destaque 1</h3>
-				<img>
-				<p>Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum </p>
-				<a class="leia-mais">Leia Mais</a>
-			</div>
-			<div class="destaque-item">
-				<h3>Destaque 2</h3>
-				<img>
-				<p>Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum </p>
-				<a class="leia-mais">Leia Mais</a>
-			</div>
-			<div class="destaque-item">
-				<h3>Destaque 3</h3>
-				<img>
-				<p>Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum Loren ipsum </p>
-				<a class="leia-mais">Leia Mais</a>
-			</div>
+			<?php 
+				$query = new WP_Query(array('post_type' => 'post', 'category_name' => 'destaque'));
+				if($query->have_posts()) while ($query->have_posts()) : 
+					$query->the_post();
+					get_template_part('partials/destaque','home');
+				endwhile; 
+			?>
 		</div>
+
+		<br clear="all">
 
 		<div class="anuncio"></div>
 
-		<div class="">	
-	</div>
+		<br clear="all">
+
+		<div class="forum-home col-sm-7">
+			<?php echo get_img('estrela-big.png',''); ?>
+			<div>
+				<h4>ÚLTIMAS DO FORUM</h4>
+			</div>
+		</div> 
+
+		<div class="newsletter-home col-sm-4">
+			<h4>Newsletter</h4>
+		</div>
+
+	</div> 
 
 <?php get_footer(); ?>

@@ -6,3 +6,6 @@ if (!is_admin()) {
 
   wp_enqueue_script('jquery');  
 } 
+
+add_image_size('destaque-home', 250, 140);
+

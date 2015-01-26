@@ -31,6 +31,7 @@ function diogenes_setup() {
 	register_nav_menus( array(
 		'primary-left' => __( 'Primary Left Menu', 'diogenes' ),
 		'primary-right' => __( 'Primary Right Menu', 'diogenes' ),
+		'footer' => __( 'Footer Menu', 'diogenes' ),
 	) ); 
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
@@ -45,6 +46,7 @@ function diogenes_setup() {
 		'default-image' => '',
 	) ) );
 	add_filter('show_admin_bar', '__return_false');
+	add_theme_support( 'post-thumbnails' ); 
 }
 endif; // diogenes_setup
 add_action( 'after_setup_theme', 'diogenes_setup' ); 
