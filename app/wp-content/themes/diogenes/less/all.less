@@ -32,7 +32,7 @@ h3{
 }
 
 .wrapper{
-	width: 982px;
+	width: 961px;
 	margin: auto;
 }
 .border-wrapper{
@@ -55,6 +55,7 @@ header{
 		background: white;
 		display:table;
 		float: left;
+    padding: 0 0 20px 0;
 	}
 
 	.background-menu-cont{
@@ -122,12 +123,13 @@ header{
 	}
 }
 
-.slider-home{
+.slider-home{ 
 	.slider-container{
 		width: 1200px;
 		margin: auto;
 		height: 411px;
 		background: white;
+    overflow: hidden;
 		.slider-image{
 			width: 1200px;
 			height: 411px; 
@@ -153,7 +155,7 @@ header{
 		ul{
 			margin: auto;
 			display: table;
-			li{
+			.swiper-pagination-switch{
 				height: 15px;
 				width: 15px;
 				background: #E8E8E8;
@@ -162,7 +164,8 @@ header{
 				border-radius: 50%;
 				cursor: pointer;
 			}
-			li.ativo{
+			.swiper-active-switch, 
+      .swiper-visible-switch{
 				background: #124A71;
 				
 			}
@@ -183,11 +186,15 @@ header{
 	> div{ 
 		.destaque-content{
 			padding: 10%;
-			text-align: center;
-			color: #fff;
-			background: #124A71;
-			width: 80%;
-			margin: auto;
+      text-align: center;
+      background: #124A71;
+      width: 80%;
+      margin: auto;
+      p{
+        color: #fff;
+        font-weight: normal;
+        font-size: 14px;
+      } 
 			a{
 				color: #FCC73D;
 				text-transform: uppercase;
@@ -210,17 +217,38 @@ header{
 	> img{
 		float: right;
 		position: absolute;
-		margin: 0 0 -10px 0;
+		margin: 7px 0 -10px 0;
 		right: 0;
 	}
 	> div{
 		background: #1B6B37;
 		margin: 20px 0 0;
+    padding: 15px 20px 40px;
 	}
+  h4{
+    color: white;
+    text-align: center;
+    font-weight: bold; 
+  }
+  ul{ 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    list-style-image: url(@template_path + 'images/estrela.png');
+    list-style-position: inside;
+  }
 }
 
 .newsletter-home{
 	background: #124A71;
+  margin: 20px 0 0 0px;
+  padding: 15px 18px;
+  h4{
+    color: white;
+    text-align: center;
+    font-weight: bold; 
+    margin: 0;
+  }
 }
 
 footer{
@@ -231,12 +259,173 @@ footer{
 	> div{
 		.copyright{
 			color: white;
+      font-size: 10px;
+      margin: 50px 0 0 0;
 		}
 		.menu-footer{
-			a{ 	
-				color: #FFD112;
-				font-size: 12px;
-			}
+      margin: 30px 0 0;
+      li{
+        float: left; 
+        color: #FFD112;
+        font-size: 11px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        &::after{
+          padding: 0 10px;
+          content: "|";
+        }
+        a{  
+          color: inherit; 
+        }  
+      }
 		}
 	}	
+}
+.anuncio{
+  > div{
+    background: #FFD217;
+    text-align: center; 
+    padding: 35px;
+    margin: 20px 0 0;  
+  }
+  
+}
+
+.linha{
+  margin: 0 10px 0 0;
+  display: table;
+  width: 100%;
+}
+
+label, input[type=text]{
+  width: 100%;
+}
+label{
+  padding: 0;
+  color: white;
+  font-size: 12px;
+  height: 15px;
+}
+
+input[type=button], 
+input[type=submit]{
+  float: right;
+  margin: 17px 0 0;
+  text-transform: uppercase;
+  background: #1B6B37;
+  border: 0;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 11px;
+}
+
+.button-link-to{
+  background: #124A71 url(@template_path + 'images/btn-arrow.png') right center; 
+  float: right;
+  margin: 10px 0 0;
+  text-transform: uppercase; 
+  border: 0;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 11px;
+}
+
+.widget-area{
+  .col-sm-7, .col-sm-3, .col-sm-4{
+    width: 100%;
+    float: none;
+    margin: 30px 0;
+    display: table;
+  }
+  .forum-home{
+    padding: 0; 
+    img{
+      margin: 0px 0 -10px 0;  
+    }
+  }
+}
+
+.content-page{
+  background: white;
+  display: table;
+}
+
+h3{
+  color: #124A71;
+  text-transform: lowercase;
+}
+p{
+  font-size: 11px;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+hr{
+  background: #124A71;
+  border-color: #124A71;
+}
+.content-page{
+  .item-list{
+    img{
+      float: left;
+      margin: 0 10px 10px 0;
+    }
+    h4{ 
+      color: #1B6B37;
+      text-transform: uppercase;
+      margin: 0; 
+      font-weight: bold;
+      a{
+        color: inherit;
+      }
+    } 
+    h6{
+      margin: 0;
+      color: #fff;
+      background: #1B6B37;
+      display: inline-block;
+      margin: 0 0 10px 0;
+      padding: 2px 5px;
+      font-size: 12px;
+    } 
+  }
+    
+}
+
+a{
+  color: #124A71;
+  &:hover{
+    color: white;
+  }
+}
+
+.list-pages{ 
+  width: auto;
+  display: table;
+  margin: 10px auto;
+  a, span{
+    padding: 0 5px;
+    margin: 0 5px;
+    border: 2px solid #FCC73D;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+}
+
+.child-page{
+  border: 1px solid #124A71;
+  text-align: center;
+  padding-bottom: 20px; 
+  margin-top: 35px;
+  img{
+    margin: -35px 0 0 0;
+  } 
+}
+.center{
+  margin: auto;
+  float: none;
 }

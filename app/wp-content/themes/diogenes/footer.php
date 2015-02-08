@@ -12,8 +12,8 @@
 
 	<footer>
     <div class="wrapper">
-      <div class="col-sm-6 copyright">Copyright</div>
-      <div class="col-sm-6 menu-footer">
+      <div class="col-sm-5 copyright">Copyright</div>
+      <div class="col-sm-7 menu-footer">
         <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?> 
       </div>
     </div>

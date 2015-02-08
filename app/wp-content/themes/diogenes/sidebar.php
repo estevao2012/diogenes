@@ -3,13 +3,13 @@
  * The sidebar containing the main widget area.
  *
  * @package diogenes
- */
-
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
+ */ 
 ?>
 
-<div id="secondary" class="widget-area" role="complementary">
+<div id="secondary" class="widget-area col-sm-4" role="complementary">
+
+  <?php get_template_part('partials/list', 'forum'); ?> 
+  <?php get_template_part('partials/destaque', 'newsletter'); ?>
+
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->

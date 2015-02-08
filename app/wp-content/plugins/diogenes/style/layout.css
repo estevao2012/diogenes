@@ -1,0 +1,136 @@
+.col-rel-4{
+	width: 39%;
+	display:inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: top;
+	min-height: 1px;
+}
+.col-rel-6{
+	width: 59%;
+	display:inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	min-height: 1px;
+	vertical-align: top;
+}
+
+.col-rel-3{
+	width: 29%;
+	display:inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: top;
+	min-height: 1px;
+}
+.col-rel-7{
+	width: 69%;
+	display:inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	min-height: 1px;
+	vertical-align: top;
+}
+
+#parceiros h3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	#parceiros h3:nth-of-type(0){
+		margin-top: 0;
+	}
+	
+#parceiros p{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.clientes img {
+	border: 1px solid #f7efe2;
+	border-radius: 2px;
+}
+.without-border{
+	margin: 0;
+	text-transform: inherit;
+}
+hr.pl-separador{
+	border: 0;
+	border-bottom: 1px dotted #cccccc;
+}
+.item-cliente{
+	display: table;
+	cursor: pointer;
+}
+.item-cliente:hover .descricao{
+	display: block;
+	position: absolute;
+	margin: -130px -43px 0px;
+	width: 180px;
+	background: #525052;
+	height: 50px;
+	padding: 0 15px;
+}
+.item-cliente:hover .descricao h3{
+	color: white;
+	text-align: center;
+}
+
+.lideranca .card{
+	margin: 0;
+}
+.lideranca .small-slider a{
+	font-size: 20px;
+}
+
+.lideranca-pagination{
+	text-align: right;
+}
+
+.lideranca-pagination span{
+	margin-left: 20px
+}
+
+.lideranca .swiper-container,.lideranca .swiper-slide {
+  width: 100%;
+  height: 200px;
+}
+
+.mapa-elogroup{
+	position: relative;
+	display:table;
+}
+.mapa-elogroup .item-mapa-group{
+	position: absolute;
+
+}
+.mapa-elogroup .item-mapa-group .pointer{
+	width: 13px;
+	height: 13px;
+	background: #ffb517;
+	border: 2px solid white;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+}
+.mapa-elogroup .item-mapa-group:hover .item-box-detail{
+	padding: 0 0 0 10px;
+	display: table;
+	margin: 13px;
+	background: #525052;
+}
+.mapa-elogroup .item-mapa-group:hover .item-box-detail h4{
+	color: white;
+	float: left;
+	padding: 6px 7px 0 0; 
+}
+.mapa-elogroup .item-mapa-group:hover .item-box-detail img{
+	float: left;
+}
+
+
+
+.mapa-elogroup .item-mapa-group .item-box-detail{
+	display: none;
+}

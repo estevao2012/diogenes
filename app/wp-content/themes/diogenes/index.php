@@ -1,46 +1,29 @@
 <?php
 /**
- * The main template file.
+ * The template for displaying all pages.
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
  *
  * @package diogenes
  */
 
-get_header(); ?>
+get_header(); ?> 
+<div class="wrapper content-page">
+  <div class="col-sm-8">
+    <h3><span><?php echo get_img('icon-noticias.png', ''); ?></span>
+    Notícias</h3>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+    <?php while ( have_posts() ) : the_post(); ?>   
+      
+      <?php get_template_part('partials/item', 'list'); ?>
 
-		<?php if ( have_posts() ) : ?>
+    <?php endwhile; ?>
+    <div class="list-pages"><?php echo paginate_links(array('prev_text' => '<', 'next_text' => '>'));?></div>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php diogenes_paging_nav(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+    </div> 
+  <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>
