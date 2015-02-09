@@ -14,8 +14,8 @@ get_header(); ?>
 <div class="wrapper content-page">
   <div class="col-sm-8">
     <?php while ( have_posts() ) : the_post(); ?>  
-      <h3>
-        <span><?php the_post_thumbnail('icon'); ?></span>
+      <span class='icon-page'><?php the_post_thumbnail('icon'); ?></span>
+      <h3 class="card-font"> 
         <?php the_title() ?>
       </h3>
       <?php the_content(); ?>

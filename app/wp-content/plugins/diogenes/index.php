@@ -8,6 +8,7 @@ Author: Estevão Moraes de Andrade
 
 require_once 'banner.php'; 
 require_once 'artigos.php'; 
+require_once 'casa_de_apostas.php'; 
 require_once 'setup_theme.php'; 
 require_once 'configuracoes_adicionais.php'; 
 
@@ -16,6 +17,7 @@ class Diogenes {
   function __construct() {
     new Banner();
     new Artigos();
+    new CasaDeApostas();
     new SetupTheme();
  
     $this->register_styles();
