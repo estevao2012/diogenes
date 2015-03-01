@@ -11,7 +11,7 @@ set :default_stage, 'staging'
 set :scm, :git
 set :repo_url, 'git@github.com:estevao2012/sp_site1.git'
 
-set :deploy_via, :remote_cache
+set :deploy_via, :copy
 set :copy_exclude, %w{.git .DS_Store www docs conf design site}
 set :keep_releases, 5
 

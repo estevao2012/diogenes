@@ -98,9 +98,10 @@ header{
 		ul{
 			display: table;
       margin: 0 auto;
+      position: relative;
 			li{
 				float: left;
-				margin: 10px 13px;
+				padding: 10px 13px;
 				a{
 					font-size: 11px;
 					font-weight: bold;
@@ -115,7 +116,44 @@ header{
             color: #FFD31C;
           }
         }
-			}
+        .sub-menu{
+          position:absolute;
+          width: 150px;
+          z-index: 3;
+          text-align: center;
+          margin: 2px 0 0 -10px;
+          display: none;
+          li{
+            background: rgba(252,199,61,0.8);
+            display: block;
+            padding: 5px;
+            width: 100%;
+            margin: 0 0px 3px 0px;
+            a{
+              &:hover{
+                color: #00923F;
+              }
+            }
+          }
+          &:before{
+            content: "";
+            background: transparent;
+            margin: 0 0px 0 10px;
+            float: left;
+            border-bottom: 13px rgba(252,199,61,0.8) solid;
+            border-left: 13px transparent solid;
+            border-right: 13px transparent solid;
+            width: 0;
+            height: 0;
+          }
+        }
+        &:hover{
+          .sub-menu{
+            display: block;
+          }
+        }
+      }
+
 		}
 	}
 
