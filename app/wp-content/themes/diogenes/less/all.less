@@ -106,10 +106,15 @@ header{
 					font-weight: bold;
 					color: white;
 					text-decoration: none;
-          &:hover{
+          &:hover, {
             color: #FFD31C;
           }
 				}
+        &.current-menu-item{
+          a{
+            color: #FFD31C;
+          }
+        }
 			}
 		}
 	}
@@ -302,7 +307,9 @@ footer{
   width: 100%;
 }
 
-label, input[type=text]{
+label, input[type=text],
+input[type=email],
+textarea{
   width: 100%;
 }
 label{
@@ -490,4 +497,25 @@ a{
 
 .card-font{
   font-family: 'card_characters', sans-serif;
+}
+.wpcf7-form-control-wrap{
+  position: static;
+  display: inline-block;
+  width: 85%;
+  input, textarea{
+    background: rgba(18,14,113, 0.2);
+    border: 0;
+    padding: 5px 10px;
+  }
+}
+.group-contato-field{
+  margin: 0 0 20px 0;
+}
+.label-contato{
+  font-weight: bold;
+  font-size: 12px;
+  position: static;
+  display: inline-block;
+  width: 15%; 
+  float: left;
 }
