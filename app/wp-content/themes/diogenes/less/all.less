@@ -284,6 +284,13 @@ header{
     font-weight: bold;
     list-style-image: url(@template_path + 'images/estrela.png');
     list-style-position: inside;
+    li{
+      margin: 0 0 5px 0;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -556,4 +563,15 @@ a{
   display: inline-block;
   width: 15%; 
   float: left;
+}
+.bbp-search-form{
+  input[type='submit']{
+    margin: 0 0 0 10px;
+  }
+}
+
+.forum{
+  #subscription-toggle{
+    display: none;
+  }
 }

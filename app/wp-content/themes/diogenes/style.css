@@ -43,3 +43,28 @@ table {
 	border-spacing: 0;
 }
 
+header.full-width{
+	width: 100%;
+	background: white;
+}
+
+.content-header.full-width{
+	float: none;
+	margin: auto;
+	position: relative;
+}
+.content-page.full-width{
+	width: 100%;
+	height: 100%;
+}
+
+.background-full-width{
+  background: #124a71;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  margin: 42px 0;
+  height: 42px;
+  float: left;
+}
